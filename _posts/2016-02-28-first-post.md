@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "My First Post"
-date: 2016-02-28
+date: 2016-02-28 15:38:00
+categories: first post
 ---
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 This is my first blog post. Let's try some $$\LaTeX: \int (x^2 + 1) dx$$.

@@ -94,7 +94,7 @@ you can do something like:
 
 {% highlight latex %}
 \Node (A) {A};
-\Node (B) [right =of A] {A};
+\Node (B) [right =of A] {B};
 {% endhighlight %}
 
 To do this you need to use tell tikz to use the `positioning` package.

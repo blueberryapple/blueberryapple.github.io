@@ -18,3 +18,5 @@ github_username:  blueberryapple
 
 # Build settings
 markdown: kramdown
+highlighter: pygments
+future: true

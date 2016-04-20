@@ -53,15 +53,15 @@ not as quick. To draw the same the tree with tikz the code is:
 {% highlight latex %}
 \begin{tikzpicture}
 \Node (A){A}
-  \child{ \Node(B){B} }
-  \child{ \Node(C){C} };
+  \child{ \Node (B){B} }
+  \child{ \Node (C){C} };
 \end{tikzpicture}
 {% endhighlight %}
 
-Notice the semicolon, after before the last defined child of A, you need
-that or your code won't compile. The text in parentheses signifies the name 
+Notice the semicolon, after the last defined child of A, you need
+that or your code won't compile. The text in parentheses `(B)` signifies the name 
 of the node that you can refer to when doing relative positioning. 
-And the text in the braces following the node's name, is the text that will
+And the text in the braces `{B}` following the node's name, is the text that will
 be displayed as the node in the tree.
 
 To draw the same subtree in the qtree example:
@@ -71,11 +71,11 @@ To draw the same subtree in the qtree example:
 \Node (A){A}
   \child{
     % we replace \Node(B){B} with:
-    \Node(B){B}
+    \Node (B){B}
     \child { \Node (D){D} }
     \child { \Node (E){E} }
   }
-  \child{ \Node(C){C} };
+  \child{ \Node (C){C} };
 \end{tikzpicture}
 {% endhighlight %}
 
@@ -103,7 +103,16 @@ To do this you need to use tell tikz to use the `positioning` package.
 \usetikzlibrary{poisitioning}
 {% endhighlight %}
 
-Put this before begining a tikzpicture.
+Put this before begining a tikzpicture. The positioning words that are usable
+are:
+
+1. above
+2. below
+3. right
+4. left
+
+And you can mix and match the vertical and horizontal positioning words
+as your heart desires. So `[below right =of A]` works just fine.
 
 
 <h1>Every node style</h1>

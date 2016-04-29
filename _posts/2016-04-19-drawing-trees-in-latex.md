@@ -52,9 +52,9 @@ not as quick. To draw the same the tree with tikz the code is:
 
 {% highlight latex %}
 \begin{tikzpicture}
-\Node (A){A}
-  \child{ \Node (B){B} }
-  \child{ \Node (C){C} };
+\node (A){A}
+  child{ node (B){B} }
+  child{ node (C){C} };
 \end{tikzpicture}
 {% endhighlight %}
 
@@ -69,13 +69,13 @@ To draw the same subtree in the qtree example:
 {% highlight latex %}
 \begin{tikzpicture}
 \Node (A){A}
-  \child{
+  child{
     % we replace \Node(B){B} with:
-    \Node (B){B}
-    \child { \Node (D){D} }
-    \child { \Node (E){E} }
+    node (B){B}
+    child { node (D){D} }
+    child { node (E){E} }
   }
-  \child{ \Node (C){C} };
+  child{ node (C){C} };
 \end{tikzpicture}
 {% endhighlight %}
 
@@ -86,15 +86,15 @@ Before I mentioned relative positioning, so instead of specifying
 coordinates to place nodes:
 
 {% highlight latex %}
-\Node (A) at (1,1) {A};
-\Node (B) at (1,2) {B};
+\node (A) at (1,1) {A};
+\node (B) at (1,2) {B};
 {% endhighlight %}
 
 you can do something like:
 
 {% highlight latex %}
-\Node (A) {A};
-\Node (B) [right =of A] {B};
+\node (A) {A};
+\node (B) [right =of A] {B};
 {% endhighlight %}
 
 To do this you need to use tell tikz to use the `positioning` package.
@@ -127,17 +127,17 @@ something like:
 This example tells latex to draw circles around each node and have the text
 at 18pt font.
 
-<h1>Edge labels</h1>
+<h1>Tree edge labels</h1>
 For sure if you're drawing trees, you'll want to draw a trie at some point.
 To label the edges in the two level binary tree in the previous examples:
 
 {% highlight latex %}
 \Node (A){A}
-  \child{ 
-    \Node(B){B}
+  child{ 
+    node(B){B}
     edge from parent node[left, draw=none]{0} % labels the edge (A, B) with 0
   }
-  \child{ \Node(C){C} };
+  child{ node(C){C} };
 {% endhighlight %}
 
 The first argument `left` in the brackets tells which side to put the label, and

@@ -18,15 +18,16 @@ in tikz:
 
 {% highlight latex %}
 \begin{tikzpicture}
-\Node (A) {A};
-\Node (B) [left =of A] {A};
-\Node (C) [below =of B] {C};
+\node (A) {A};
+\node (B) [left =of A] {A};
+\node (C) [below =of B] {C};
 \end{tikzpicture}
 {% endhighlight %}
 
 Here we declare three nodes A, B, and C. Every node declaration should end
 with a semicolon or you will get a compile error. It was different when
 drawing trees because starting from the root node was one whole node declartion.
+Rule of thumb, semicolon for each `\` .
 
 <h2>Edges</h2>
 <h1>Undirected</h1>
@@ -36,9 +37,9 @@ ways to draw this, but the way I'm going to show is the most intuitive to me.
 {% highlight latex %}
 \begin{tikzpicture}
 % nodes from previous example
-\Node (A) {A};
-\Node (B) [left =of A] {A};
-\Node (C) [below =of B] {C};
+\node (A) {A};
+\node (B) [left =of A] {A};
+\node (C) [below =of B] {C};
 
 % edges
 \path
@@ -60,3 +61,35 @@ the declaration of a tikzpicture to `\begin{tikzpicture}[->]` . That arrow
 will tell tikz to use arrows for edges. But depending on your preferences, 
 the arrowhead may not be to your liking, you can change it to the latex 
 default arrowhead by adding `\tikzset[>=latex]` before you begin a tikzpicture.
+
+<h1>Reversing a graph</h1>
+To reverse a graph is really simple as well. When you specified `->` when
+declaring a tikzpicture, all you have to do is flip the direction of the
+arrow, and the arrows will now point in the opposite direction.
+
+<h1>Graph edge labels</h1>
+Before we talked about how to create edge labels for trees, and in this case
+the syntax is not so different. For edge labels, there are positioning
+keywords that you can use to place the label:
+
+1. above
+2. below
+
+Here's an example of this in action:
+{% highlight latex %}
+\begin{tikzpicture}
+% nodes from previous example
+\node (A) {A};
+\node (B) [left =of A] {A};
+\node (C) [below =of B] {C};
+
+% edges
+\path
+(A) edge node[above]{edge ab} (B)
+(B) edge node[below]{edge bc} (C)
+(C) edge node[below, show=none]{edge cb} (B);
+\end{tikzpicture}
+{% endhighlight %}
+
+So basically for edge labels append `node[settings]{label}` between `edge`
+and the end vertex of the edge.

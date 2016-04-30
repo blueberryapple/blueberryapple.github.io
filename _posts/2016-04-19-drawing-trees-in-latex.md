@@ -143,3 +143,11 @@ To label the edges in the two level binary tree in the previous examples:
 The first argument `left` in the brackets tells which side to put the label, and
 `draw=none` tells latex not to draw the circle if you've previously
 defined a style for every node. Because essentially this label is a node.
+
+<h1>Node distance</h1>
+There will come a time when you have a lot of children for one node and 
+they will overlap each other. To fix this, we can set `node distance`
+for the tikzpicture setting. This means doing something like
+`\begin{tikzpicture}[node distance = 3cm]` to space the nodes apart.
+The distance is measured from the center of each node to the other. So keep
+that in mind when setting the distance.

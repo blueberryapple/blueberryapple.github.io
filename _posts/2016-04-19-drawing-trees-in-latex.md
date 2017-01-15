@@ -68,7 +68,7 @@ To draw the same subtree in the qtree example:
 
 {% highlight latex %}
 \begin{tikzpicture}
-\Node (A){A}
+\node (A){A}
   child{
     % we replace \Node(B){B} with:
     node (B){B}
@@ -132,7 +132,7 @@ For sure if you're drawing trees, you'll want to draw a trie at some point.
 To label the edges in the two level binary tree in the previous examples:
 
 {% highlight latex %}
-\Node (A){A}
+\node (A){A}
   child{ 
     node(B){B}
     edge from parent node[left, draw=none]{0} % labels the edge (A, B) with 0

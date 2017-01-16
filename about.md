@@ -4,10 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Hello. My name is Ben and I'm currently a second year studying 
+Hello. My name is Ben and I'm currently a third year studying 
 [Mathematics-Computer Science](http://math.ucsd.edu/programs/undergraduate/
 bs_math_comp_science.php) at UCSD. My interests currently lie in data
 visualization and even though I've just started I'm really interested in
-learning how it's done. I'm also working on becoming an actuary as well, so
-I'm also studying to take the [SOA P exam](https://soa.org/education/exam-req/
-edu-exam-p-detail.aspx) which I'll take probably in the fall.
+learning how it's done. I'm also interested in becoming an actuary. So far I've passed:
+
+* P Exam
+
+And am going to sit for the August 2017 FM Exam since, there'll be changes
+to the syllabus in July.

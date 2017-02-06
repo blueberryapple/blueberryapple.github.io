@@ -19,3 +19,7 @@ github_username:  blueberryapple
 # Build settings
 markdown: kramdown
 future: true
+
+# kramdown
+kramdown:
+  math_engine: mathjax

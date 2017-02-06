@@ -4,7 +4,7 @@ date: 2016-04-19 9:57:00 -0800
 categories: latex
 ---
 Throughout my first two years taking computer science and math courses,
-there've been times when an instructors recommends using $$\LaTeX.$$ That
+there've been times when an instructors recommends using \\(\LaTeX.\\) That
 being said, a lot of students groan at the very words. Being the ambitious
 freshman that I was last year, I tackled it head on. And I have to say that
 latex does make your homework look a lot nicer and exactly how the 

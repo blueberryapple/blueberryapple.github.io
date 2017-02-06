@@ -3,8 +3,6 @@ layout: post
 date: 2016-04-19 9:57:00 -0800
 categories: latex
 ---
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-
 Throughout my first two years taking computer science and math courses,
 there've been times when an instructors recommends using $$\LaTeX.$$ That
 being said, a lot of students groan at the very words. Being the ambitious

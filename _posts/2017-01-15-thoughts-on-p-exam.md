@@ -21,7 +21,7 @@ study manuals](http://faculty.atu.edu/mfinan/actuaries.html) for all the
 preliminary exams. The best part is that unlike the other study manuals
 out there, his is written in latex. The math is just so much easier to read
 than whatever was used to typeset Broverman's study manual. At some point
-Broverman was using $$\phi$$ instead of $$\varnothing$$ to denote the 
+Broverman was using \\(\phi\\) instead of \\(\varnothing\\) to denote the 
 empty set.
 
 Also, I found the free practice exams at [The Infinte Actuary](http://www.theinfiniteactuary.com/) 

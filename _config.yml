@@ -22,4 +22,4 @@ future: true
 
 # kramdown
 kramdown:
-  math_engine: nil
+  math_engine: +nil+

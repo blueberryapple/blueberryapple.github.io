@@ -17,7 +17,7 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 github_username:  blueberryapple
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 future: true
 
 # kramdown

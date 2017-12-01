@@ -11,6 +11,3 @@ visualization and even though I've just started I'm really interested in
 learning how it's done. I'm also interested in becoming an actuary. So far I've passed:
 
 * P Exam
-
-And am going to sit for the August 2017 FM Exam since, there'll be changes
-to the syllabus in July.

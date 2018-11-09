@@ -91,16 +91,15 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
-    text-decoration: none;
+    color: $text-color;
+    text-decoration: underline;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: $brand-color-light;//darken($brand-color, 15%);
     }
 
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        color: $brand-color-light;
     }
 }
 
@@ -207,4 +206,15 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+/**
+ * Tab focus outline color
+ */
+:focus {
+    outline: 2px solid $brand-color-light;
+}
+
+:hover, :active { // prevents the outline when clicking
+    outline: none;
 }

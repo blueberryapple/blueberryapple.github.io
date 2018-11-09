@@ -12,12 +12,10 @@ description: > # this means to ignore newlines until "baseurl:"
   Ben's blog about life and learning experiences.
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-#twitter_username: jekyllrb
+url: "http://teabens.ml # the base hostname & protocol for your site
 github_username:  blueberryapple
 
 # Build settings
-markdown: redcarpet
 future: true
 
 # kramdown

@@ -95,7 +95,7 @@ a {
     text-decoration: underline;
 
     &:visited {
-        color: $brand-color-light;//darken($brand-color, 15%);
+        color: $grey-color;
     }
 
     &:hover {

@@ -9,12 +9,6 @@
     // Positioning context for the mobile navigation icon
     position: relative;
 
-    a {
-        &:hover, &:visited {
-            color: $brand-color;
-        }
-    }
-
     :focus {
         outline: 2px solid $brand-color;
     }
@@ -31,10 +25,13 @@
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
+}
 
-    &,
-    &:visited {
-        color: $grey-color-dark;
+a.site-title, .site-header a {
+    color: $grey-color-dark;
+
+    &:hover, &:visited:hover {
+        color: $brand-color;
     }
 }
 

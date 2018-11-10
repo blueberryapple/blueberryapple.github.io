@@ -3,6 +3,7 @@ layout: post
 title: "My First Post"
 date: 2016-02-28 15:38:00
 categories: first post
+latex: true
 ---
 This is my first blog post. Let's try some \\(\LaTeX: \int (x^2 + 1) dx\\).
 Pretty cool. Anyways, in this blog I'll mostly talk about projects I

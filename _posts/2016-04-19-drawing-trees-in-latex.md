@@ -2,6 +2,7 @@
 layout: post
 date: 2016-04-19 9:57:00 -0800
 categories: latex
+latex: true
 ---
 Throughout my first two years taking computer science and math courses,
 there've been times when an instructors recommends using \\(\LaTeX\\). That

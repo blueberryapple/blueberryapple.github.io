@@ -3,6 +3,7 @@ layout: post
 title: "Thoughts on Getting Through the P Exam"
 date: 2017-01-15 15:00:00 -0800
 categories: actuary
+latex: true
 ---
 Well I've just passed the SOA P Exam yesterday. And I have a few thoughts
 about the test prep process as well as resources I'd like to share.

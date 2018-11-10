@@ -218,3 +218,8 @@ pre {
 :hover, :active { // prevents the outline when clicking
     outline: none;
 }
+
+::selection {
+    background-color: honeydew;
+    color: black;
+}

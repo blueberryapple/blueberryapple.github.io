@@ -1,9 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-    renderMathInElement(document.getElementById("postBody"), {
-        delimiters: [{
-            left: "\\(",
-            right: "\\)",
-            display: false
-        }]
-    });
+    let post = document.getElementById('postBody')
+    if (post){
+        renderMathInElement(post, {
+            delimiters: [{
+                left: "\\(",
+                right: "\\)",
+                display: false
+            }]
+        });
+    }
 });

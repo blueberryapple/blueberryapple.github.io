@@ -9,7 +9,7 @@ Well I've just passed the SOA P Exam yesterday. And I have a few thoughts
 about the test prep process as well as resources I'd like to share.
 
 ## P Exam
-My initial thought is the that exam is fairly easier than the prep material I
+My initial thought is that the exam is fairly easier than the prep material I
 used. Which was the Broverman ACTEX study manual. The practice exams were
 grossly inaccurate representations of the actual difficulty level. Not sure
 how much I can talk about the exam
